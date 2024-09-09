@@ -40,9 +40,7 @@ require('config/db.php');
         </nav>
     </header>
 
-   <?php include('components/toasts.php') ?>
-   <?php include('components/login.php') ?>
-   <?php include('components/register.php') ?>
+
 
 
 
