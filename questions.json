@@ -25,5 +25,113 @@
             "options": ["Cascading Style Sheets", "Cascading Script Sheets", "Computer Style Sheets"],
             "correct_answer": "Cascading Style Sheets"
         }
+    ],
+    "2": [
+        {
+            "question": "Which of the following is used to summarize data in a pivot table?",
+            "options": ["Rows", "Columns", "Values", "Filters"],
+            "correct_answer": "Values"
+        },
+        {
+            "question": "Which function is used in Excel to calculate the average of a dataset?",
+            "options": ["SUM()", "AVERAGE()", "COUNT()", "IF()"],
+            "correct_answer": "AVERAGE()"
+        },
+        {
+            "question": "What does ETL stand for in data processing?",
+            "options": ["Extract, Transform, Load", "Execute, Transform, Learn", "Edit, Transform, Load", "Extract, Translate, Load"],
+            "correct_answer": "Extract, Transform, Load"
+        },
+        {
+            "question": "Which SQL command is used to combine rows from two or more tables?",
+            "options": ["JOIN", "UNION", "MERGE", "INSERT"],
+            "correct_answer": "JOIN"
+        },
+        {
+            "question": "Which type of chart is best for showing proportions of a whole?",
+            "options": ["Bar Chart", "Pie Chart", "Line Chart", "Scatter Plot"],
+            "correct_answer": "Pie Chart"
+        }
+    ],
+    "3": [
+        {
+            "question": "What does HTTP stand for?",
+            "options": ["HyperText Transfer Protocol", "HyperText Transition Protocol", "High Transfer Text Protocol", "Hyper Transfer Text Process"],
+            "correct_answer": "HyperText Transfer Protocol"
+        },
+        {
+            "question": "Which HTML tag is used to create a hyperlink?",
+            "options": ["<link>", "<a>", "<href>", "<button>"],
+            "correct_answer": "<a>"
+        },
+        {
+            "question": "Which of the following is used to style web pages?",
+            "options": ["HTML", "CSS", "JavaScript", "PHP"],
+            "correct_answer": "CSS"
+        },
+        {
+            "question": "What does DOM stand for in web development?",
+            "options": ["Document Object Model", "Display Object Model", "Document Order Model", "Data Object Model"],
+            "correct_answer": "Document Object Model"
+        },
+        {
+            "question": "Which JavaScript method is used to select an element by its ID?",
+            "options": ["getElementById()", "querySelector()", "getElement()", "selectById()"],
+            "correct_answer": "getElementById()"
+        }
+    ],
+    "4": [
+        {
+            "question": "What is the primary goal of cybersecurity?",
+            "options": ["Confidentiality, Integrity, Availability", "Privacy, Protection, Authentication", "Integrity, Privacy, Access", "Protection, Authentication, Access"],
+            "correct_answer": "Confidentiality, Integrity, Availability"
+        },
+        {
+            "question": "Which type of attack involves flooding a network with traffic to disrupt services?",
+            "options": ["Phishing", "Denial-of-Service (DoS)", "Malware", "Man-in-the-Middle"],
+            "correct_answer": "Denial-of-Service (DoS)"
+        },
+        {
+            "question": "What is encryption?",
+            "options": ["The process of hiding data from unauthorized access", "The process of blocking access to systems", "The process of validating user identity", "The process of designing secure software"],
+            "correct_answer": "The process of hiding data from unauthorized access"
+        },
+        {
+            "question": "What does VPN stand for?",
+            "options": ["Virtual Private Network", "Verified Personal Network", "Virtual Protected Network", "Virtual Process Network"],
+            "correct_answer": "Virtual Private Network"
+        },
+        {
+            "question": "Which of the following is considered multi-factor authentication?",
+            "options": ["Username and password", "Fingerprint and password", "Security question only", "Single sign-on"],
+            "correct_answer": "Fingerprint and password"
+        }
+    ],
+    "5": [
+        {
+            "question": "What is a product roadmap?",
+            "options": ["A detailed guide of all product features", "A high-level plan outlining the vision and direction of the product", "A document listing the product's bugs", "A step-by-step guide to implementing a product"],
+            "correct_answer": "A high-level plan outlining the vision and direction of the product"
+        },
+        {
+            "question": "Which methodology emphasizes iterative development and continuous feedback?",
+            "options": ["Waterfall", "Agile", "Lean", "Six Sigma"],
+            "correct_answer": "Agile"
+        },
+        {
+            "question": "Which metric is most useful in assessing the success of a product feature?",
+            "options": ["Time to market", "User engagement", "Development cost", "Team size"],
+            "correct_answer": "User engagement"
+        },
+        {
+            "question": "What is MVP in product management?",
+            "options": ["Maximum Value Proposition", "Minimum Viable Product", "Most Valuable Product", "Managed Value Process"],
+            "correct_answer": "Minimum Viable Product"
+        },
+        {
+            "question": "What is the role of a Product Manager in a scrum team?",
+            "options": ["Define user stories and prioritize the backlog", "Lead the team and allocate resources", "Write code and debug features", "Test the product for quality assurance"],
+            "correct_answer": "Define user stories and prioritize the backlog"
+        }
     ]
 }

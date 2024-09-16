@@ -27,6 +27,7 @@ require('config/db.php');
                 <div class="space-x-4">
                     <?php if (isset($_SESSION['user_id'])): ?>
                     <a href="auth/logout.php" class="text-white hover:text-gray-300">Logout</a>
+                    <a href="profile.php" class="text-white hover:text-gray-300">Profile</a>
                     <?php if ($_SESSION['is_company']): ?>
                     <a href="create.php" class="text-white hover:text-gray-300">Create Job</a>
                     <?php endif; ?>

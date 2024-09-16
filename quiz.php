@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($passed) {
         $_SESSION['message'] = "Congratulations! You passed the quiz with a score of $score/5. Please upload your CV.";
         $_SESSION['message_type'] = "success";
-        header("Location: upload_cv.php?job_id=$job_id");
+        header("Location: apply.php?job_id=$job_id");
         exit();
     } else {
         // If the user failed, suggest courses

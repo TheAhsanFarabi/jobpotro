@@ -15,11 +15,11 @@ mysqli_close($conn);
 <?php include('components/toasts.php') ?>
 <?php include('components/login.php') ?>
 <?php include('components/register.php') ?>
-<footer class="bg-gray-800 text-white w-full mt-auto bottom-0">
+<!-- <footer class="bg-gray-800 text-white w-full bottom-0 mt-10">
     <div class="container mx-auto text-center p-3">
         <span>&copy; Jobpotro 2024</span>
     </div>
-</footer>
+</footer> -->
 
 
 
