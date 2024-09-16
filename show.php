@@ -17,6 +17,13 @@ if (isset($_POST['delete'])) {
         echo "Error deleting record: " . mysqli_error($conn);
     }
 }
+
+// Fetch all applicants for this job
+$applicants_query = "SELECT users.username, users.email, applications.score, applications.passed, applications.uploaded_cv 
+                    FROM applications
+                    JOIN users ON applications.user_id = users.id
+                    WHERE applications.job_id = $job_id";
+$applicants_result = mysqli_query($conn, $applicants_query);
 ?>
 
 <div class="container mx-auto p-6 my-3">
@@ -48,6 +55,56 @@ if (isset($_POST['delete'])) {
             <h2 class="text-2xl font-semibold mb-2 text-primary">Responsibilities:</h2>
             <p class="text-gray-800 mb-4"><?php echo nl2br($job['responsibility']); ?></p>
         </div>
+    </div>
+
+    <!-- Take Quiz Button -->
+    <div class="mt-6">
+        <a href="quiz.php?job_id=<?php echo $job_id; ?>" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md focus:outline-none transition duration-300">
+            <i class="fas fa-pen-alt mr-2"></i> Take Quiz
+        </a>
+    </div>
+
+    <!-- Applicants List -->
+    <div class="mt-10">
+        <h2 class="text-2xl font-semibold mb-4">Applicants</h2>
+        <?php if (mysqli_num_rows($applicants_result) > 0): ?>
+            <table class="min-w-full bg-white border">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-2 text-gray-600">Name</th>
+                        <th class="px-6 py-2 text-gray-600">Email</th>
+                        <th class="px-6 py-2 text-gray-600">Score</th>
+                        <th class="px-6 py-2 text-gray-600">Result</th>
+                        <th class="px-6 py-2 text-gray-600">CV</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php while ($applicant = mysqli_fetch_assoc($applicants_result)): ?>
+                        <tr class="border-b">
+                            <td class="px-6 py-2"><?php echo $applicant['username']; ?></td>
+                            <td class="px-6 py-2"><?php echo $applicant['email']; ?></td>
+                            <td class="px-6 py-2"><?php echo $applicant['score']; ?>/5</td>
+                            <td class="px-6 py-2">
+                                <?php if ($applicant['passed']): ?>
+                                    <span class="text-green-600 font-semibold">Passed</span>
+                                <?php else: ?>
+                                    <span class="text-red-600 font-semibold">Failed</span>
+                                <?php endif; ?>
+                            </td>
+                            <td class="px-6 py-2">
+                                <?php if ($applicant['passed'] && $applicant['uploaded_cv']): ?>
+                                    <a href="uploads/cv/<?php echo $applicant['uploaded_cv']; ?>" download class="text-blue-500 hover:underline">Download CV</a>
+                                <?php else: ?>
+                                    <span class="text-gray-500">No CV</span>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                    <?php endwhile; ?>
+                </tbody>
+            </table>
+        <?php else: ?>
+            <p class="text-gray-600">No applicants yet.</p>
+        <?php endif; ?>
     </div>
 
     <!-- Edit and Delete Buttons -->

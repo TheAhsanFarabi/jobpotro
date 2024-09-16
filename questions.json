@@ -1,0 +1,29 @@
+{
+    "1": [
+        {
+            "question": "What is OOP in programming?",
+            "options": ["Object-Oriented Programming", "Open Operating Protocol", "Overlapped Output Process"],
+            "correct_answer": "Object-Oriented Programming"
+        },
+        {
+            "question": "What does SQL stand for?",
+            "options": ["Structured Query Language", "Simple Query Language", "Sequential Query Language"],
+            "correct_answer": "Structured Query Language"
+        },
+        {
+            "question": "What is the time complexity of a binary search?",
+            "options": ["O(n)", "O(log n)", "O(n^2)"],
+            "correct_answer": "O(log n)"
+        },
+        {
+            "question": "What does HTML stand for?",
+            "options": ["HyperText Markup Language", "HyperText Meta Language", "HyperText Model Language"],
+            "correct_answer": "HyperText Markup Language"
+        },
+        {
+            "question": "What does CSS stand for?",
+            "options": ["Cascading Style Sheets", "Cascading Script Sheets", "Computer Style Sheets"],
+            "correct_answer": "Cascading Style Sheets"
+        }
+    ]
+}
